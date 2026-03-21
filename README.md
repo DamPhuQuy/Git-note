@@ -62,4 +62,3 @@ Let imagine your project as a tree:
 `git branch <branch-name>`: Create a new branch
 `git checkout <branch-name>`: Move the HEAD pointer to that branch to work on.
 `git checkout -b <branch-name>` = git branch + git checkout
-<!-- test-->

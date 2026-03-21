@@ -19,7 +19,9 @@ The basic workflow involves a progression through these areas:
 
 ### 2.1. Git config
 - To configurate identity
+
 `git config --global user.name "Your name"`
+
 `git config --global user.email "youremail@gmail.com"`
 
 ### 2.2. Git init 
@@ -53,7 +55,7 @@ The basic workflow involves a progression through these areas:
     - `main`: branch that you are working with. 
     - `HEAD`: a pointer to show the current position in project history.
 
-## 3. Working with branches
+### 2.6. Working with branches
 
 Let imagine your project as a tree: 
 - Branch `main`: a main trunk, containing the most stable source code, ready to run. 
@@ -70,8 +72,33 @@ Each branch is an independent version of the project.
 
 When you checkout back and forth, Git will change the files in your directory to exactly match what has been saved on that branch.
 
-## 4. Git merge
+### 2.7. Git merge
 
 - To integrate changes from one Git branch into your current branch
 
 `git merge <branch-name>`
+
+## 2.8. Working with remote repository
+
+### 2.8.1. Connect to remote
+- To let your computer know the address, you should add the representative name (usually `origin`)
+
+`git remote -v`: check current remote
+
+`git remote add origin <url_repository>`: add new remote 
+
+### 2.8.2. Get the data
+`git clone`: Get complete history and branch project.
+
+`git fetch`: Get the changes from remote but do not update directly to the writing code. It helps you view what have changed without breaking the code. 
+
+`git pull`: = `git pull` + `git merge`, it get the changes and merge directly to the code. 
+
+*Caution*: `git pull` will cause conflict if you and your partner change the same source code.
+
+### 2.8.3. Upload the data
+
+`git push <remote_name> <branch_name>`
+E.g: `git push origin main`
+
+Attach local with remote: using `-u`, after that just type `git push`

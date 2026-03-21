@@ -69,3 +69,9 @@ Let imagine your project as a tree:
 Each branch is an independent version of the project.
 
 When you checkout back and forth, Git will change the files in your directory to exactly match what has been saved on that branch.
+
+## 4. Git merge
+
+- To integrate changes from one Git branch into your current branch
+
+`git merge <branch-name>`

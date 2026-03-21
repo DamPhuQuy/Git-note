@@ -39,6 +39,7 @@ The basic workflow involves a progression through these areas:
 - Save a snapshot of your staged changes to the local repository
 
 `git commit`: multi-line commit message
+
 `git commit -m "[messsage]"`: single line commit message
 
 ### 2.5. Git log
@@ -60,5 +61,11 @@ Let imagine your project as a tree:
 - If the test fails? You simply cut off that branch. If it succeeds? You "merge" that branch back into the main trunk.
 
 `git branch <branch-name>`: Create a new branch
+
 `git checkout <branch-name>`: Move the HEAD pointer to that branch to work on.
+
 `git checkout -b <branch-name>` = git branch + git checkout
+
+Each branch is an independent version of the project.
+
+When you checkout back and forth, Git will change the files in your directory to exactly match what has been saved on that branch.

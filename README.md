@@ -41,4 +41,25 @@ The basic workflow involves a progression through these areas:
 `git commit`: multi-line commit message
 `git commit -m "[messsage]"`: single line commit message
 
+### 2.5. Git log
+- To view the commit history of a Git repository
 
+`git log`
+
+- The string right after the "commit" is called SHA-1 hash. It plays as an ID for the version that you have saved.
+
+- In addition, you will see (HEAD -> main), that means: 
+    - `main`: branch that you are working with. 
+    - `HEAD`: a pointer to show the current position in project history.
+
+## 3. Working with branches
+
+Let imagine your project as a tree: 
+- Branch `main`: a main trunk, containing the most stable source code, ready to run. 
+- Sub-branches: Like branches growing from the trunk. You can create a new branch to test anything that you want without affecting the main trunk. 
+- If the test fails? You simply cut off that branch. If it succeeds? You "merge" that branch back into the main trunk.
+
+`git branch <branch-name>`: Create a new branch
+`git checkout <branch-name>`: Move the HEAD pointer to that branch to work on.
+`git checkout -b <branch-name>` = git branch + git checkout
+<!-- test-->

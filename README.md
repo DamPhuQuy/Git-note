@@ -92,7 +92,7 @@ When you checkout back and forth, Git will change the files in your directory to
 
 `git fetch`: Get the changes from remote but do not update directly to the writing code. It helps you view what have changed without breaking the code. 
 
-`git pull`: = `git pull` + `git merge`, it get the changes and merge directly to the code. 
+`git pull (<remote_name> <branch_name>)`: = `git fetch` + `git merge`, it get the changes and merge directly to the code. 
 
 *Caution*: `git pull` will cause conflict if you and your partner change the same source code.
 
@@ -102,3 +102,5 @@ When you checkout back and forth, Git will change the files in your directory to
 E.g: `git push origin main`
 
 Attach local with remote: using `-u`, after that just type `git push`
+
+### 2.8.4. Manage branch on remote

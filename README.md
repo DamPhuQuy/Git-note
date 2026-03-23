@@ -9,11 +9,13 @@ The Three Areas of Git
 - Staging Area (Index): This acts as a temporary "draft board" or intermediate area where you prepare changes to be included in the next commit. You use the git add command to move changes from the working directory to the staging area. This gives you granular control, allowing you to selectively stage specific files or even parts of a single file, ensuring that only related changes are included in a single commit.
 - Local Repository (.git directory): This is where Git permanently stores the project's history, including all metadata and the object database of committed snapshots. When you run the git commit command, Git takes all the changes currently in the staging area and records them as a new, permanent version (commit) in the local repository.
 
-### 1.2. Typical Git Workflow
+### 1.2. Typical Git Workflow on local
 The basic workflow involves a progression through these areas:
 - Modify files in your Working Directory.
 - Stage the specific changes you want to save using git add [filename] or git add .
 - Commit the staged changes to your Local Repository using git commit -m "[message]"
+
+### 1.3. Feature branch flow
 
 ## 2. Git commands
 
@@ -104,3 +106,7 @@ E.g: `git push origin main`
 Attach local with remote: using `-u`, after that just type `git push`
 
 ### 2.8.4. Manage branch on remote
+
+View all branches (local and remote): `git branch -a`
+
+Remove a branch: `git push origin --delete <branch_name>`
